@@ -82,7 +82,7 @@ const Home = ()=>{
         const timeout = setTimeout(() => controller.abort(), 60_000)
 
         try {
-            const response = await fetch(`http://127.0.0.1:8000/businesses/?${params}`, {
+            const response = await fetch(`https://business-intelligence-bg44.onrender.com/businesses/?${params}`, {
                 signal: controller.signal
             })
             const data = await response.json()
